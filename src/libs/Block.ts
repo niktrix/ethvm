@@ -62,7 +62,7 @@ class Block {
   }
   public getNumber(): HexNumber {
     if (!this.cache.number) {
-      this.cache.number = common.HexNumber(this.block.number)
+      this.cache.number =  this.block.number
     }
     return this.cache.number
   }

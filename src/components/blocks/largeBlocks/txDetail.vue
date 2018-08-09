@@ -57,10 +57,10 @@
       <div class="detail-row-copy">
         <li>Block</li>
         <div class="copy">
-          <copy-to-clip-component :valueToCopy="tx.getBlockNumber().toNumber()"></copy-to-clip-component>
+          <copy-to-clip-component :valueToCopy="tx.getBlockNumber()"></copy-to-clip-component>
         </div>
         <li class="link">
-          <router-link :to="'/block/'+tx.getBlockHash().toString()">{{tx.getBlockNumber().toNumber()}}</router-link>
+          <router-link :to="'/block/'+tx.getBlockHash().toString()">{{tx.getBlockNumber()}}</router-link>
         </li>
       </div>
       <div class="detail-row">
@@ -93,7 +93,7 @@
   } from '@/libs'
   import store from '@/states'
   import Vue from 'vue'
-  
+
   export default Vue.extend({
     name: 'TxView',
     props: ['tx'],

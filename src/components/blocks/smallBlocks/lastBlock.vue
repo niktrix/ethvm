@@ -22,9 +22,9 @@ export default Vue.extend({
         return 'Loading'
       }
       this.$eventHub.$on(sEvents.newBlock, _block => {
-        return this.$store.getters.getBlocks[0].getIntNumber()
+        return this.$store.getters.getBlocks[0].getNumber()
       })
-      return this.$store.getters.getBlocks[0].getIntNumber()
+      return this.$store.getters.getBlocks[0].getNumber()
     }
   }
 })
