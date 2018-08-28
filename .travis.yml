@@ -32,5 +32,5 @@ before_script:
   - 'if [ $PROJECT = "apps/server" ]; then cd $TRAVIS_BUILD_DIR/apps/server; fi'
 
 script:
-  - yarn lint
-  - yarn test:unit
+  - 'if [ $PROJECT = "apps/ethvm" ]; then yarn format; fi'
+  - 'if [ $PROJECT = "apps/server" ]; then yarn test:unit; fi'
