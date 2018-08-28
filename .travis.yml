@@ -17,6 +17,11 @@ before_install:
   - export PATH=$HOME/.yarn/bin:$PATH
 install:
   - yarn install
+before_script:
+  - 'if [ $PROJECT = "apps/ethvm" ]; cd apps/ethvm fi'
+  - 'if [ $PROJECT = "apps/server" ]; cd apps/server fi'
+
+
 script:
   - 'if [ $PROJECT = "apps/ethvm" ]; yarn lint fi'
-  - yarn test:unit
+  - 'if [ $PROJECT = "apps/server" ]; yarn test:unit fi'
