@@ -23,10 +23,10 @@ before_install:
 install:
   - yarn install
 before_script:
-  - 'if [ $PROJECT = "apps/ethvm" ];cd $TRAVIS_BUILD_DIR/apps/ethvm fi'
-  - 'if [ $PROJECT = "apps/server" ]; cd $TRAVIS_BUILD_DIR/apps/server fi'
+  - 'if [ $PROJECT = "apps/ethvm" ]; then cd $TRAVIS_BUILD_DIR/apps/ethvm fi'
+  - 'if [ $PROJECT = "apps/server" ]; then cd $TRAVIS_BUILD_DIR/apps/server fi'
 
 
 script:
-  - 'if [ $PROJECT = "apps/ethvm" ]; yarn lint fi'
-  - 'if [ $PROJECT = "apps/server" ]; yarn test:unit fi'
+  - 'if [ $PROJECT = "apps/ethvm" ]; then yarn lint fi'
+  - 'if [ $PROJECT = "apps/server" ]; then yarn test:unit fi'
