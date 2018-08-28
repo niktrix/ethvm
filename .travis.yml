@@ -18,5 +18,5 @@ before_install:
 install:
   - yarn install
 script:
-  - yarn lint
+  - 'if [ $PROJECT = "apps/ethvm" ]; yarn lint fi'
   - yarn test:unit
