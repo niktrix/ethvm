@@ -14,7 +14,6 @@ matrix:
         - "9"
         - "10"
         -
-      env: PROJECT=apps/eth
 
 sudo: false
 
@@ -33,4 +32,6 @@ before_script:
 
 script:
   - 'if [ $PROJECT = "apps/ethvm" ]; then yarn format; fi'
+  - 'if [ $PROJECT = "apps/ethvm" ]; then yarn test:unit; fi'
+  - 'if [ $PROJECT = "apps/server" ]; then yarn lint; fi'
   - 'if [ $PROJECT = "apps/server" ]; then yarn test:unit; fi'
