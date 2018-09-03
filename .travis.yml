@@ -12,11 +12,14 @@ matrix:
       language: node_js
       node_js:
         - "10"
+      addons:
+        - rethinkdb: '2.3.4'
+        
     -
       env: PROJECT=apps/ethvm-unittest
       language: node_js
       node_js:
-        - "10"
+        - "10"        
     -
       env: PROJECT=apps/server
       language: node_js
@@ -38,6 +41,8 @@ before_script:
   - 'if [ $PROJECT = "apps/ethvm" ]; then cd $TRAVIS_BUILD_DIR/apps/ethvm; fi'
   - 'if [ $PROJECT = "apps/server" ]; then cd $TRAVIS_BUILD_DIR/apps/server; fi'
   - 'if [ $PROJECT = "apps/ethvm-unittest" ]; then cd $TRAVIS_BUILD_DIR/apps/server; fi'
+  - 'if [ $PROJECT = "=apps/ethvm-e2etest" ]; then cd $TRAVIS_BUILD_DIR/apps/server; fi'
+
 
 
 script:
