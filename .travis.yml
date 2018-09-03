@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+sudo: false
+>>>>>>> 8af175913a7b29c56ae0069f6ca4be28c730c405
 language: generic
 matrix:
   include:
@@ -5,17 +9,24 @@ matrix:
       env: PROJECT=apps/ethvm
       language: node_js
       node_js:
+<<<<<<< HEAD
         - "9"
+=======
+>>>>>>> 8af175913a7b29c56ae0069f6ca4be28c730c405
         - "10"
     -
       env: PROJECT=apps/server
       language: node_js
       node_js:
+<<<<<<< HEAD
         - "9"
         - "10"
         -
 
 sudo: false
+=======
+        - "10"
+>>>>>>> 8af175913a7b29c56ae0069f6ca4be28c730c405
 
 before_install:
   - 'if [ $PROJECT = "apps/ethvm" ]; then cd $TRAVIS_BUILD_DIR/apps/ethvm; fi'
@@ -29,5 +40,9 @@ before_script:
   - 'if [ $PROJECT = "apps/server" ]; then cd $TRAVIS_BUILD_DIR/apps/server; fi'
 
 script:
+<<<<<<< HEAD
   - 'if [ $PROJECT = "apps/server" ]; then yarn lint; fi'
   - 'if [ $PROJECT = "apps/server" ]; then yarn test:unit; fi'
+=======
+  - 'if [ $PROJECT = "apps/server" ]; then yarn lint; yarn test:unit; fi'
+>>>>>>> 8af175913a7b29c56ae0069f6ca4be28c730c405
