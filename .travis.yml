@@ -1,6 +1,6 @@
 sudo: false
 language: generic
-addons: 
+addons:
   rethinkdb: "2.3.4"
 matrix:
   include:
@@ -14,12 +14,12 @@ matrix:
       language: node_js
       node_js:
         - "10"
-        
+
     -
       env: PROJECT=apps/ethvm-unittest
       language: node_js
       node_js:
-        - "10"        
+        - "10"
     -
       env: PROJECT=apps/server
       language: node_js
@@ -28,9 +28,9 @@ matrix:
 
 before_install:
   - 'if [ $PROJECT = "apps/ethvm" ]; then cd $TRAVIS_BUILD_DIR/apps/ethvm; fi'
-  - 'if [ $PROJECT = "apps/server" ]; then cd $TRAVIS_BUILD_DIR/apps/server; fi'
-  - 'if [ $PROJECT = "=apps/ethvm-e2etest" ]; then cd $TRAVIS_BUILD_DIR/apps/server; fi'
-  - 'if [ $PROJECT = "=apps/ethvm-unittest" ]; then cd $TRAVIS_BUILD_DIR/apps/server; fi'
+  - 'if [ $PROJECT = "apps/server" ]; then cd $TRAVIS_BUILD_DIR/apps/server; ls; pwd; fi'
+  - 'if [ $PROJECT = "=apps/ethvm-e2etest" ]; then cd $TRAVIS_BUILD_DIR/apps/server; ls; pwd; fi'
+  - 'if [ $PROJECT = "=apps/ethvm-unittest" ]; then cd $TRAVIS_BUILD_DIR/apps/server; ls; pwd; fi'
 
 
 
@@ -47,6 +47,6 @@ before_script:
 
 script:
   - 'if [ $PROJECT = "apps/server" ]; then yarn lint;  fi'
-  - 'if [ $PROJECT = "=apps/ethvm-e2etest" ]; then yarn testdata; fi'
+  - 'if [ $PROJECT = "=apps/ethvm-e2etest" ]; then yarn testdata; ls; pwd;  fi'
   - 'if [ $PROJECT = "apps/ethvm-unittest" ]; then  yarn test:unit; fi'
 
