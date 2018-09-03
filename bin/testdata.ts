@@ -43,12 +43,12 @@ commander
       function(err, conn) {
         if (err) {
           console.log('err', err)
-          ora.info(`Tx:  Value: `)
+          ora.info(`Error Connecting database `)
         }
         r.table('transactions')
           .insert(tx1)
           .run(conn, function(err, cursor) {
-            ora.info(`Tx:  Value: `)
+            ora.info(`connected `)
           })
       }
     )
