@@ -49,6 +49,7 @@ commander
           .insert(tx1)
           .run(conn, function(err, cursor) {
             ora.info(`connected `)
+            process.exit(0)
           })
       }
     )
