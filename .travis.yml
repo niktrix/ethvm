@@ -1,5 +1,7 @@
 sudo: false
 language: generic
+addons: 
+  rethinkdb: "2.3.4"
 matrix:
   include:
     -
@@ -12,8 +14,6 @@ matrix:
       language: node_js
       node_js:
         - "10"
-      addons:
-        - rethinkdb: '2.3.4'
         
     -
       env: PROJECT=apps/ethvm-unittest
