@@ -18,6 +18,8 @@
     }
   },
   "scripts": {
+    "testdata": "ts-node bin/testdata.ts",
+
     "monkey": "ts-node bin/monkey-cli.ts",
     "format": "yarn lint:fix && yarn prettier",
     "lint": "tslint -c tslint.json --project .",
@@ -44,6 +46,7 @@
     "tslint-config-prettier": "^1.14.0",
     "tslint-consistent-codestyle": "^1.13.3",
     "typescript": "^3.0.1",
+    "rethinkdb": "^2.3.3",
     "web3-utils": "^1.0.0-beta.35"
   },
   "dependencies": {
