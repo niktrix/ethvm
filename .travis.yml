@@ -49,6 +49,6 @@ before_script:
 script:
   - 'if [ $PROJECT = "apps/server" ]; then yarn lint;  fi'
   - 'if [ $PROJECT = "=apps/ethvm-e2etest" ]; then yarn testdata; ls; pwd;  fi'
-    - 'if [ $PROJECT = "=apps/serverunittest" ]; then yarn test:unit;  fi'
+  - 'if [ $PROJECT = "=apps/serverunittest" ]; then yarn test:unit;  fi'
 
  
