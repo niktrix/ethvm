@@ -103,7 +103,6 @@ commander
   .command('data')
   .alias('d')
   .action(() => {
-    ora.info('----------')
     r.connect(
       { host: 'localhost', port: 28015 },
       function(err, conn) {
@@ -111,27 +110,23 @@ commander
           console.log('err', err)
           ora.info(`Error Connecting database `)
         }
-// TODO resolve this callback hell
+        // TODO resolve this callback hell
         r.dbCreate('eth_mainnet').run(conn, function(err, cursor) {
           ora.info(`err creating db ${JSON.stringify(err)}`)
           r.db('eth_mainnet')
             .tableCreate('transactions')
             .run(conn, function(err, cursor) {
-              ora.info(`err creating tables ${JSON.stringify(err)}`)
               r.db('eth_mainnet')
                 .table('transactions')
                 .insert([tx1, tx2])
                 .run(conn, function(err, cursor) {
-                  ora.info(`err inserting -- tx ${JSON.stringify(err)}`)
                   r.db('eth_mainnet')
                     .tableCreate('blocks')
                     .run(conn, function(err, cursor) {
-                      ora.info(`err creating block tables ${JSON.stringify(err)}`)
                       r.db('eth_mainnet')
                         .table('blocks')
                         .insert([block1, block2])
                         .run(conn, function(err, cursor) {
-                          ora.info(`err inserting block  ${JSON.stringify(err)}`)
                           process.exit(0)
                         })
                     })
