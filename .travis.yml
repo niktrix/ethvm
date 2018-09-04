@@ -31,7 +31,7 @@ before_install:
   - 'if [ $PROJECT = "apps/server" ]; then cd $TRAVIS_BUILD_DIR/apps/server; fi'
   - 'if [ $PROJECT = "=apps/ethvm-e2etest" ]; then yarn install; yarn testdata d; cd $TRAVIS_BUILD_DIR/apps/server; ls; pwd; fi'
   - 'if [ $PROJECT = "=apps/serverunittest" ]; then cd $TRAVIS_BUILD_DIR/apps/server; fi'
- 
+
 
 
 install:
@@ -48,7 +48,7 @@ before_script:
 
 script:
   - 'if [ $PROJECT = "apps/server" ]; then yarn lint;  fi'
-  - 'if [ $PROJECT = "=apps/ethvm-e2etest" ]; then yarn testdata; ls; pwd;  fi'
+  - 'if [ $PROJECT = "=apps/ethvm-e2etest" ]; then yarn test:e2e;  fi'
   - 'if [ $PROJECT = "=apps/serverunittest" ]; then yarn test:unit;  fi'
 
- 
+
