@@ -39,7 +39,7 @@ before_install:
   - ./.travis/build-condition.sh .travis/build-condition.sh
   - 'if [ $PROJECT = "apps/ethvm" ]; then cd $TRAVIS_BUILD_DIR/apps/ethvm; fi'
   - 'if [ $PROJECT = "apps/server" ]; then cd $TRAVIS_BUILD_DIR/apps/server; fi'
-  - 'if [ $PROJECT = "apps/ethvm-e2etest" ]; then yarn install; fi'
+  - 'if [ $PROJECT = "apps/ethvm-e2etest" ]; then cd $TRAVIS_BUILD_DIR/apps/server; fi'
   - 'if [ $PROJECT = "apps/serverunittest" ]; then cd $TRAVIS_BUILD_DIR/apps/server; fi'
 
 install:
