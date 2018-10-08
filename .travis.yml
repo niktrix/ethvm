@@ -1,5 +1,10 @@
 sudo: false
 language: generic
+
+git:
+  submodules:
+    false
+
 env:
   - ETHVM_RETHINK_DB_HOST=localhost
   - ETHVM_RETHINK_DB_PORT=28015
