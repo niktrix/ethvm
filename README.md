@@ -127,7 +127,8 @@ We welcome every kind of contribution, so, please see [CONTRIBUTING](.github/CON
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/niktrix/ethvm.svg)](https://greenkeeper.io/)
+
 <div align="center">
-  [![Greenkeeper badge](https://badges.greenkeeper.io/niktrix/ethvm.svg)](https://greenkeeper.io/)
   <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="built with love by enKryptIO team" />
 </div>
