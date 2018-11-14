@@ -6,6 +6,8 @@
 
 # EthVM: Ethereum Blockchain Explorer
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/niktrix/ethvm.svg)](https://greenkeeper.io/)
+
 ![Screenshot example](.github/assets/ethvm.png)
 
 ## Philosophy
