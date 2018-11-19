@@ -2,6 +2,7 @@ sudo: true
 language: generic
 services:
   - redis-server
+  - docker
 git:
   submodules:
     false
@@ -52,3 +53,9 @@ install:
 script:
   - cd $PROJECT_DIR
   - eval $ACTION
+
+deploy:
+  provider: script
+  script: bash ./.travis/docker_push.sh
+  on:
+    branch: master

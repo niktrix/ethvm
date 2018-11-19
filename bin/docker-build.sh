@@ -6,7 +6,7 @@ ROOT_DIR=$(cd ${SCRIPT_DIR}/..; pwd)
 
 # DEFAULT VARS
 PROJECTS=("bolt", "explorer", "api")
-ORG="enkryptio"
+ORG="niktrix"
 
 # Usage prints the help for this command.
 usage() {
