@@ -75,9 +75,10 @@ process@~0.5.1:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/process/-/process-0.5.2.tgz#1638d8a8e34c2f440a91db95ab9aeb677fc185cf"
 
-ts-interface-builder@^0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/ts-interface-builder/-/ts-interface-builder-0.1.5.tgz#e411de08b5b93412062457fcd0c6a33750263364"
+ts-interface-builder@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/ts-interface-builder/-/ts-interface-builder-0.1.8.tgz#0bd5a7d8d24f46c12b1dcdf81c44dd7704e7a11b"
+  integrity sha512-uUKE9+XTRfSp8X/LLfnqnS2uI2ReS77GxFE1aD4Y7BIBXpuuYKIJbWjGWTuFU8PdLhFSam8wYP1HmY4nbcqv+g==
   dependencies:
     commander "^2.12.2"
     fs-extra "^4.0.3"
