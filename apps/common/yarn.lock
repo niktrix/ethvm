@@ -2,9 +2,10 @@
 # yarn lockfile v1
 
 
-"@types/node@^10.12.1":
-  version "10.12.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.2.tgz#d77f9faa027cadad9c912cd47f4f8b07b0fb0864"
+"@types/node@^10.12.22":
+  version "10.12.22"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.22.tgz#eb2a8a1c24ee4a59cf87549cc67d60976ebaebd2"
+  integrity sha512-sozsyYqmHUD1OKzMb61UH4Es1oMLLA4g4eX6Zu1i8ZpG1sTlmZClL9ZU9GuNQQ2fHDKmaRUWlDSvzQ/aIDaIiQ==
 
 base64-js@^1.0.2:
   version "1.3.0"
