@@ -621,10 +621,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/ethereumjs-abi@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@types/ethereumjs-abi/-/ethereumjs-abi-0.6.1.tgz#68dad80888a6e9f12b04f85adcb9cad2cb825e5c"
-  integrity sha512-tnnqhY6FfgAqpliB/YkyXkSF9KvyM2Uz+b2UWZ0uUtQRFE4EHCZWztUJt6k1pE78/iIxQqciBw+cIAS8YhEU7w==
+"@types/ethereumjs-abi@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@types/ethereumjs-abi/-/ethereumjs-abi-0.6.3.tgz#eb5ed09fd86b9e2b1c0eb75d1e9bc29c50715c86"
+  integrity sha512-DnHvqPkrJS5w4yZexTa5bdPNb8IyKPYciou0+zZCIg5fpzvGtyptTvshy0uZKzti2/k/markwjlxWRBWt7Mjuw==
   dependencies:
     "@types/node" "*"
 
