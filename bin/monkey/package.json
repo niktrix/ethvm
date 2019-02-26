@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@enkrypt.io/json-rpc2": "^1.0.2",
-    "@types/ethereumjs-abi": "^0.6.1",
+    "@types/ethereumjs-abi": "^0.6.3",
     "@types/ethereumjs-tx": "^1.0.0",
     "@types/ethereumjs-util": "^5.2.0",
     "@types/node": "^10.7.0",
