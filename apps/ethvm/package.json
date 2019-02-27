@@ -18,7 +18,7 @@
   "dependencies": {
     "bignumber.js": "^5.0.0",
     "chart.js": "^2.7.2",
-    "clipboard-copy": "^2.0.0",
+    "clipboard-copy": "^3.0.0",
     "ethereum-blockies": "^0.1.1",
     "ethereumjs-abi": "^0.6.5",
     "ethereumjs-account": "^2.0.5",
