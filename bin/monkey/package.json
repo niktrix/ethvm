@@ -40,6 +40,6 @@
     "tslint-config-prettier": "^1.14.0",
     "tslint-consistent-codestyle": "^1.13.3",
     "typescript": "^3.0.1",
-    "web3-utils": "^1.0.0-beta.35"
+    "web3-utils": "^1.2.1"
   }
 }
