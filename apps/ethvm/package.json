@@ -29,7 +29,7 @@
     "v-tooltip": "^2.0.0-rc.32",
     "visibilityjs": "^2.0.2",
     "vue": "^2.5.17",
-    "vue-class-component": "^6.2.0",
+    "vue-class-component": "^7.2.1",
     "vue-i18n": "^7.6.0",
     "vue-infinite-scroll": "^2.0.2",
     "vue-paginate": "^3.6.0",
