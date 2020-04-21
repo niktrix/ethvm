@@ -33,7 +33,7 @@
     "ethereumjs-util": "^6.0.0",
     "lerna": "^3.0.5",
     "opt-cli": "^1.6.0",
-    "ora": "^3.0.0",
+    "ora": "^4.0.4",
     "prettier": "1.15.2",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
